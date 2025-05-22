@@ -1,7 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body{
     width: 100vw;
     height: 100vh;
-    
 }
 
 
@@ -24,13 +28,27 @@ background-color: gray;
     display: flex;
     background-color: black;
     flex-wrap: wrap;
+    gap: 5px;
     justify-content: space-around;
       
 }
-.container h1,h4{
-    color:white;
-
+.num {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    padding-right: 1.2rem;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
+
+.container > .num .calc, 
+.container > .num .result {
+    color:white;
+    font-size: 2rem;
+}
+
+
 
 img{
     color: white;
@@ -38,18 +56,16 @@ img{
 
 
 .keys{
-    
     display: grid;
     grid-template-columns:repeat( 4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 5px;
-    
-
 }
 .keys button{
-    border-radius: 40px;
+    border-radius: 50%;
     font-size: 15px;
     box-sizing: border-box;
+    border: none;
     padding: 10px;
 }
 
@@ -64,8 +80,8 @@ img{
 }
 .light{background-color: rgb(51, 42, 42);
     color: white;
-
 }
+
 .num{
     
 }
